@@ -1,0 +1,40 @@
+#placement_news .row .col-xs-2.col-sm-1 
+{
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+#placement_news
+{
+    text-shadow: #eeeeee 1px 1px 0px;
+    font-size:13px !important;
+    position: relative;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#placement_news_hilight p
+{
+font-size:13px !important;
+}
+
+
+#placement_news_hilight
+{
+    width: 347px;
+    float:left;
+    text-shadow: #eeeeee 1px 1px 0px;
+    font-size:13px;
+    position: relative;
+    padding-left:10px;
+    padding-right:10px;
+
+}
+
+.hilight-img {
+   border: 1px solid black;
+   margin-left: 18px; 
+   width:315px; 
+   height: 168px;
+}
