@@ -4,7 +4,6 @@ var placement_event="#placement_event";
 		$(document).on("event_hooks", function(event,data)
 			{
 				console.dir(data);
-				console.log(data);
 		
 			for (var i=0;i<data.length;i++)
 			{ 
