@@ -5,7 +5,7 @@
 	
 	$(document).on("news_hooks", function(event,data)
 		{
-			//console.log(data);
+			console.dir(data);
 
 			for (var i=0;i<4;i++)
 			{
