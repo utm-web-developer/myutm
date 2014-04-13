@@ -3,7 +3,7 @@
 	var data = ["<h2><b>Sensitive Data</b></h2>",
 		"<form>",
 			"<p>IC Number :",                      
-				"<input type='text' name='ic_number' id='ic_number' />",
+				"<input type='text' name='ic_number' id='ic_number' class='form-control' placeholder='Enter IC number'/>",
 			"</p>",
 			"<p>Phone Number :",
 				"<input type='text' name='phone_number' id='phone_number' />",
