@@ -27,16 +27,14 @@
 		      // (1) JavaScript created popup windows are blocked by most browsers unless they 
 		      // result from direct interaction from people using the app (such as a mouse click)
 		      // (2) it is a bad experience to be continually prompted to login upon page load.
-		      //FB.login();
-		      show_fb_login();
+		      FB.login();
 		    } else {
 		      // In this case, the person is not logged into Facebook, so we call the login() 
 		      // function to prompt them to do so. Note that at this stage there is no indication
 		      // of whether they are logged into the app. If they aren't then they'll see the Login
 		      // dialog right after they log in to Facebook. 
 		      // The same caveats as above apply to the FB.login() call here.
-		      //FB.login();
-		      show_fb_login();
+		      FB.login();
 		    }
 		  });
 		  };
@@ -55,14 +53,15 @@
 		  function show_fb_profile() {
 		    FB.api('/me', function(response) {
 		    	console.dir(response);
-		      $('#result').append('<img src="http://graph.facebook.com/' + response.username + '/picture?type=large" >');
-		      $('#result').append('<h3>Name: ' + response.first_name +' '+ response.last_name + '</h3>');
+		  		$('#placement_fb').append('<fb:login-button show-faces="true" width="100%" max-rows="1"></fb:login-button>');
+		      $('#placement_fb').append('<img src="http://graph.facebook.com/' + response.username + '/picture?type=large" >');
+		      $('#placement_fb').append('<h3>Name: ' + response.first_name +' '+ response.last_name + '</h3>');
 		    });
 
 		  }
 
 		  function show_fb_login() {
-		  	$('#result').append('<fb:login-button show-faces="true" width="100%" max-rows="1"></fb:login-button>');
+		  	$('#placement_fb').append('<fb:login-button show-faces="true" width="100%" max-rows="1"></fb:login-button>');
 
 		  }
 </script>
