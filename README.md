@@ -18,3 +18,16 @@ If you're interested in any work, please follow this Standard Operation Procedur
 1. FORK !
 1. Fix the issue.
 1. Request for Pull.
+
+Phase 1:
+* Data source
+  * FB
+  * Scival Experts
+  * etc
+* Profile Page
+  * Tabbed view for each data source
+* Home page
+  * Feature list
+  * Integrated service
+  * Register form
+* Wordpress plugin OR standalone page to demo pulled data from myUTM
