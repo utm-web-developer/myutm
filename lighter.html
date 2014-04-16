@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MyUTM</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lighter.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="toper" class="navbar-brand nav-link" href="#top">MyUTM</a>
+        </div> <!-- /.navbar-header -->
+
+        <div id="home"class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#features" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div> <!-- /.navbar-collapse -->
+      </div> <!-- /.container -->
+    </nav> <!-- /.navbar -->
+	
+    <div id="top" class="jumbotron">
+      <div class="container">
+        <h1>MyUTM A New Initiative</h1>
+        <h2>MyUTM is a new initiative of joining utm system together into a system.</h2>
+		 </div> <!-- /.container -->
+		<div class="container">
+		<div class="well col-md-6 col-md-offset-3">
+		<form>
+		<div class="row">
+			<div class="col-md-4">Username</div> <div class="col-md-8"><input type="text" name="username"></div>
+			<div class="col-md-4">Password</div> <div class="col-md-8"><input type="text" name="password"></div>
+		</div>
+		</form>
+       <div><a class="btn btn-primary btn-xs">Sign In <span class="glyphicon glyphicon-circle-arrow-right"></span></a></div>
+	   <h5>Don't have an account yet? <a href="#">Create one now!</a></h5>
+	   </div>
+	   </div>
+     
+    </div> <!-- /.jumbotron -->
+
+    <div class="container">
+      <h3 id="features" class="subhead">Features</h3>
+      <div class="row benefits">
+        <div class="col-md-4 col-sm-6 benefit">
+          <div class="benefit-ball">
+            <span class="glyphicon glyphicon-user"></span>
+          </div>
+          <h3>Profile</h3>
+          <p>Create your own profile using different social media.</p>
+        </div> <!-- /.benefit -->
+
+        <div class="col-md-4 col-sm-6 benefit">
+          <div class="benefit-ball">
+            <span class="glyphicon glyphicon-globe"></span>
+          </div>
+          <h3>News</h3>
+          <p>Get instance news of utm.</p>
+        </div> <!-- /.benefit -->
+
+        <div class="col-md-4 col-sm-6 benefit">
+          <div class="benefit-ball">
+            <span class="glyphicon glyphicon-calendar"></span>
+          </div>
+          <h3>Events</h3>
+          <p>Get instance events of utm.</p>
+        </div> <!-- /.benefit -->
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+
+    <div class="container">
+      <h3 id="faqs" class="subhead">Why join MyUTM</h3>
+      <div class="row faqs">
+        <p class="col-md-4 col-sm-6">
+          <strong>Profile</strong><br>
+          Create your own profile as your wish using various application details.
+        </p>
+        <p class="col-md-4 col-sm-6">
+          <strong>Multiple system access and updates</strong><br>
+          You can access most of your utm application here and your action will be updated in other application automatically. This could save your time and workload as well.
+        </p>
+        <p class="col-md-4 col-sm-6">
+          <strong>Development team</strong><br>
+          You can join development team and contribute your work to develop myutm. Show your development skill here!
+        </p>
+      </div> <!-- /.faqs -->
+    </div> <!-- /.container -->
+
+    <div class="container-alternate">
+      <div class="container">
+        <h3 id="about" class="subhead">About Us</h3>
+        <div class="row about">
+          <div class="col-md-10 col-md-offset-1 text-center">
+            <p>
+              We are UTM Webteam. Developed by UTM web developer.
+            </p>
+            <p>
+               <a href="https://github.com/utm-web-developer/myutm"> UTM web developer</a>
+            </p>
+          </div> <!-- /.col-md-10 -->
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </div> <!-- /.container-alternate -->
+
+    <footer>
+      <div class="container clearfix">
+        <p class="pull-left">
+          Copyright &copy; MyUTM 2014
+        </p>
+        <p class="pull-right">
+          UTM web developer
+        </p>
+      </div> <!-- /.container -->
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(".nav-link").click(function(e) {
+        e.preventDefault();
+        var link = $(this);
+        var href = link.attr("href");
+        $("html,body").animate({scrollTop: $(href).offset().top - 80}, 500);
+        link.closest(".navbar").find(".navbar-toggle:not(.collapsed)").click();
+      });
+    </script>
+  </body>
+</html>
